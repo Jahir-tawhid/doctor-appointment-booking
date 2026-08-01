@@ -36,11 +36,11 @@ Make sure you have Node.js (v18+) and `npm` installed on your machine.
 
 Clone the repository and install the dependencies:
 
-\`\`\`bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/doctor-appointment-booking.git
+```bash
+git clone https://jahir-tawhid.github.io/doctor-appointment-booking/
 cd doctor-appointment-booking
 npm install
-\`\`\`
+```
 
 ### 3. Environment Setup
 
