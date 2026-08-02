@@ -3,20 +3,21 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
+  // directUrl = env("DIRECT_URL")  <-- এই লাইনটি কমেন্ট করে রাখুন
 }
 
 model Booking {
-  id           String   @id @default(cuid())
-  doctorId     String
-  userId       String
-  userEmail    String
+  id              String   @id @default(cuid())
+  doctorId        String
+  userId          String
+  userEmail       String
   doctorName      String
   doctorSpecialty String   @default("")
   selectedDate    String
-  selectedSlot String
-  createdAt    DateTime @default(now())
+  selectedSlot    String
+  createdAt       DateTime @default(now())
 
   @@unique([doctorId, selectedDate, selectedSlot])
 }
