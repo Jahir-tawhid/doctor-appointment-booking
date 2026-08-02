@@ -20,7 +20,10 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.1.2",
+    "@types/react": "^19.2.18",
     "babel-plugin-react-compiler": "^1.0.0",
-    "prisma": "^6.19.3"
+    "prisma": "^6.19.3",
+    "typescript": "^7.0.2"
   }
 }
